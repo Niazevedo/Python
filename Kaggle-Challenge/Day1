@@ -1,0 +1,82 @@
+''' Notes:
+viking_song = "Spam " * spam_amount
+print(viking_song)
+
+The * operator can be used to multiply two numbers (3 * 3 evaluates to 9), but amusingly enough, 
+we can also multiply a string by a number, to get a version that's been repeated that many times. 
+Python offers a number of cheeky little time-saving tricks like this where operators like * and + have a 
+different meaning depending on what kind of thing they're applied to. (The technical term for this is operator overloading)'''
+
+Question 0
+color = "blue"
+q0.check()
+
+Question 1
+pi = 3.14159 # approximate
+diameter = 3
+
+# Create a variable called 'radius' equal to half the diameter
+radius = diameter / 2
+# Create a variable called 'area', using the formula for the area of a circle: pi times the radius squared
+area = pi * radius**2
+q1.check()
+
+Question 2
+########### Setup code - don't touch this part ######################
+# If you're curious, these are examples of lists. We'll talk about 
+# them in depth a few lessons from now. For now, just know that they're
+# yet another type of Python object, like int or float.
+a = [1, 2, 3]
+b = [3, 2, 1]
+q2.store_original_ids()
+######################################################################
+
+# Your code goes here. Swap the values to which a and b refer.
+# If you get stuck, you can always uncomment one or both of the lines in
+# the next cell for a hint, or to peek at the solution.
+c = b
+b = a
+a = c
+
+######################################################################
+q2.check()
+
+Easier result:
+a, b = b, a
+
+Question 3
+a) Add parentheses to the following expression so that it evaluates to 1.
+(5 - 3) // 2
+
+b) <span title="A bit spicy" style="color: darkgreen ">🌶️</span> Add parentheses to the following expression so that it evaluates to 0
+8 - 3 * 2 - (1 + 1)
+
+Question 4
+
+Alice, Bob and Carol have agreed to pool their Halloween candy and split it evenly among themselves.
+For the sake of their friendship, any candies left over will be smashed. For example, if they collectively
+bring home 91 candies, they'll take 30 each and smash 1.
+
+Write an arithmetic expression below to calculate how many candies they must smash for a given haul.
+
+# Variables representing the number of candies collected by alice, bob, and carol
+alice_candies = 121
+bob_candies = 77
+carol_candies = 109
+
+# Your code goes here! Replace the right-hand side of this assignment with an expression
+# involving alice_candies, bob_candies, and carol_candies
+alice_candies + bob_candies + carol_candies
+to_smash = (alice_candies + bob_candies + carol_candies) % 3
+
+Question 5
+
+7------3
+
+What's going on here?
+
+Here's a test of your understanding: how will the value of the expression change as `-`s are added or removed from the middle? 
+Fill in the variable `ninety_nine_dashes` 
+in the code cell below with the value of the above expression if we had used 99 `-` symbols between 7 and 3 .
+
+ninety_nine_dashes = 4
